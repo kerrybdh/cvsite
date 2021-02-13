@@ -1,0 +1,94 @@
+body{
+    background-color: #F5F1F1;
+}
+.cards{
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+}
+
+
+.logo1{
+    display : flex;
+    justify-content: space-around;
+}
+
+.logo1 img{
+    width: 200px ;
+    height: 100px ;
+    margin-left:600px;
+    
+}
+
+.logo1 .paragraphe1{
+
+    color: black;
+    font-family: "Roboto", sans-serif;
+    font-size: 0.5em;
+    width: 65%;
+    display: block;
+    margin: 30px;
+    margin-left:100px;
+    margin-top: 5px;
+}
+
+
+
+.logo2{
+    display : flex;
+    justify-content: space-around;
+
+}
+
+.logo2 img{
+    width: 200px ;
+    height: 100px ;
+    margin-left:600px;
+}
+
+.logo2 .paragraphe2{
+    color: black;
+    font-family: "Roboto", sans-serif;
+    font-size: 0.5em;
+    width: 65%;
+    display: block;
+    margin: 30px;
+    margin-left:100px;
+    margin-top: 5px;
+}
+
+
+.logo3{
+    display : flex;
+    justify-content: space-around;
+}
+
+.logo3 img{
+    width: 200px ;
+    height: 100px ;
+    margin-left:600px;
+}
+
+.logo3 .paragraphe3{
+    color: black;
+    font-family: "Roboto", sans-serif;
+    font-size: 0.5em;
+    width: 65%;
+    display: block;
+    margin: 30px;
+    margin-left:100px;
+    margin-top: 5px;
+}
+
+
+.general{
+    margin-top: 50px;
+    margin-left:-100px;
+    
+
+    
+}
+
+
+
+
+
