@@ -1,0 +1,100 @@
+body{
+    background-color: #f3eae1 !important;
+}
+.cards{
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+	margin-top: 17px !important;
+}
+
+.changer{
+    margin-right: 150px !important;
+    /*font-family: "Roboto", sans-serif;
+	margin-top: 17px !important;*/
+}
+
+
+
+.logo1{
+    display : flex;
+    justify-content: space-around;
+	margin-bottom : 30px;
+}
+
+.logo1 img{
+    height: 100px ;
+    margin-left:300px;
+    
+}
+
+.logo1 .paragraphe1{
+
+    color: black;
+    font-family: "Roboto", sans-serif;
+    font-size: 1em;
+    width: 65%;
+    display: block;
+    margin: 30px;
+    margin-left:100px;
+    margin-top: 5px;
+}
+
+
+
+.logo2{
+    display : flex;
+    justify-content: space-around;
+
+}
+
+.logo2 img{
+    height: 100px ;
+    margin-left:300px;
+}
+
+.logo2 .paragraphe2{
+    color: black;
+    font-family: "Roboto", sans-serif;
+    font-size: 1em;
+    width: 65%;
+    display: block;
+    margin: 30px;
+    margin-left:100px;
+    margin-top: 5px;
+}
+
+
+.logo3{
+    display : flex;
+    justify-content: space-around;
+}
+
+.logo3 img{
+    height: 100px ;
+    margin-left:300px;
+}
+
+.logo3 .paragraphe3{
+    color: black;
+    font-family: "Roboto", sans-serif;
+    font-size: 1em;
+    width: 65%;
+    display: block;
+    margin: 30px;
+    margin-left:100px;
+    margin-top: 5px;
+}
+
+
+.general{
+    margin-top: 50px;
+    margin-left:-100px;
+    
+
+    
+}
+
+
+
+
+

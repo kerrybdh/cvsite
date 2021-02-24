@@ -1,11 +1,11 @@
 
 body{
-  background-color: #F5F1F1;
-  font-family: "Times New Roman", Times, serif;
+  background-color: #d9c8b8 !important;
+  font-family: 'Helvetica', sans-serif;
 }
 
 .titre {
-  background-color:#C4C4C4;
+  background-color:#a38f7f;
   text-align: center;
   
 }
@@ -16,12 +16,13 @@ body{
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  opacity: 0.5
 }
 
 .card-element {
   background-size: cover;
   background-position: center;
-  font-family: "Times New Roman", Times, serif;
+  font-family: 'Helvetica', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -45,13 +46,26 @@ body{
 }
 
 
+.modal-title{
+text-align: center;
+
+}
+
+.modal-body{
+  text-align: justify;
+}
+
 .btn{
-  margin-left:1150px; 
+  margin-left:1170px; 
 }
 
 .card-test a {
   text-decoration: none;
   color: black;
+}
+
+.paragraphe{
+  font-family: 'Helvetica', sans-serif;
 }
 
 @media screen and (max-width: 600px) {
@@ -67,7 +81,7 @@ body{
   .card-element {
   background-size: cover;
   background-position: center;
-  font-family: "Times New Roman", Times, serif;
+  font-family: 'Helvetica', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;

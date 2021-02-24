@@ -1,73 +1,225 @@
 <!DOCTYPE html>
 <html>
- <head>
-   <meta charset="utf-8">
-   <title>Expériences Extra-professionnelles</title>
-   <link rel="stylesheet" href="../css/extrapro.css"/>
-   <link rel="stylesheet" href="../css/formation.css"/>
-      <link rel="stylesheet" href="index.css"/>
+<head>
+<meta charset="utf-8">
+<title>Expériences Extra-professionnelles</title>
+<link rel="stylesheet" href="style.css"/>
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
   <script src="https://kit.fontawesome.com/30415b4998.js" crossorigin="anonymous"></script>
-
-   </head>
-
-
+  <style>
+    #checklist {
+  --background: #ffffff;
+  --text: #414856;
+  --check: #4F29F0;
+  --disabled: #C3C8DE;
+  --width: 100px;
+  --height: 253px;
+  --border-radius: 10px;
+  background: var(--background);
+  width: 860px;
+  margin-top: 50px;
+  height: var(--height);
+  border-radius: var(--border-radius);
+  position: relative;
+  box-shadow: 0 10px 30px rgba(#414856, 0.05);
+  padding: 30px 45px;
+  display: grid;
+  grid-template-columns: 30px auto;
+  align-items: center;
+  label {
+    color: var(--text);
+    position: relative;
+    cursor: pointer;
+    display: grid;
+    align-items: center;
+    width: fit-content;
+    transition: color .3s ease;
+    &::before,
+    &::after {
+      content:"";
+      position: absolute;
+    }
+    &::before {
+      height: 2px;
+      width: 8px;
+      left: -27px;
+      background: var(--check);
+      border-radius: 2px;
+      transition: background .3s ease; 
+    }
+    &:after {
+      height: 4px;
+      width: 4px;
+      top: 8px;
+      left: -25px;
+      border-radius: 50%;
+    }
+  }
+  input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    position: relative;
+    height: 25px;
+    width: 25px;
+    outline: none;
+    border: 0;
+    margin: 0 15px 0 0;
+    cursor: pointer;
+    background: var(--background);
+    display: grid;
+    align-items: center;
+    &::before,
+    &::after {
+      content:"";
+      position: absolute;
+      height: 2px;
+      top: auto;
+      background: var(--check);
+      border-radius: 2px;
+    }
+    &::before {
+      width: 0px;
+      right: 60%;
+      transform-origin: right bottom;
+    }
+    &::after {
+      width: 0px;
+      left: 40%;
+      transform-origin: left bottom;
+    }
+    &:checked {
+      &::before {
+        animation: check-01 .4s ease forwards;
+      }
+      &::after {
+        animation: check-02 .4s ease forwards;
+      }
+      + label {
+        color: var(--disabled);
+        animation: move .3s ease .1s forwards;
+        &::before {
+          background: var(--disabled);
+          animation: slice .4s ease forwards;
+        }
+        &::after {
+          animation: firework .5s ease forwards .1s;
+        }
+      }
+    }
+  }
+}
+  </style>
+  
+</head>
 <body>
 
-<h1>Expériences Extra-professionnelles</h1>
-<br>
+<h1>
+	<div class="cards">
+    Expériences Extra-professionnelles
+	<br><br>
+  </div> 
+</h1>
 
-
+<div class="general">
+	<div class="logo1">
+		<img src="Images/img13.jpeg"/>
+		<div class="paragraphe changer">
+				<p>
+						<h2>Hôtesse d'accueil, Pénélope</h2>
+						<!--<br>-->
+						
+						Paris, France<br/>
+						janv. 2020 - Mars 2020
+						<div id="checklist">
+								<input id="01" type="checkbox" name="r" value="1" checked disabled>
+							<label for="01">Accueillir et informer les clients</label>
+								<input id="02" type="checkbox" name="r" value="2" checked disabled>
+							<label for="02">Orienter les clients</label>
+								<input id="03" type="checkbox" name="r" value="3" checked disabled>
+							<label for="03">Réception des colis</label>
+								<input id="04" type="checkbox" name="r" value="3" checked disabled>
+							<label for="04">Réservation de services</label>
+						</div>
+				</p>
+		</div>
+  	</div>
 	
-			<h2>Hôtesse d'accueil, Pénélope</h2>
-			<h4>Paris, France</h4>
-			<h5>Janv. 2020 - Mars 2020</h5>
-			<h3>
-				<ul>
-					<li>Accueillir et informer les clients</li>
-					<li>Orienter les clients</li>
-					<li>Réception des colis</li>
-					<li>Réservation de services</li>
-				</ul>
-			</h3>
-
-
-<h2>Baby-Sitter, Kinougarde</h2><h4>Paris, France</h4>
-<h5>Oct. 2017 - Juil. 2019</h5>
-<h3>
-	<ul>
-		<li>Garde d'enfants</li>
-	</ul>
-</h3>
-<h2>Bénévolat</h2><h4>Paris, France</h4>
-<h5>Janv. 2019 - Juin 2019</h5>
-<h3>
-	<ul>
-		<li>Récolte de fonds dans la rue</li>
-		<li>Recherche de partenaires</li>
-		<li>Promotion de l'association sur les réseaux</li>
-	</ul>
-</h3>
-<h2>Défilé de Mode</h2><h4>Lomé, Togo</h4>
-<h5>Nov. 2016 - Fév. 2017</h5>
-<h3>
-	<ul>
-		<li>Gestion d'équipe et délégation de rôles</li>
-		<li>Recherche de sponsors</li>
-		<li>Publicité à travers différent réseaux sociaux</li>
-		<li>Aspect humanitaire</li>
-	</ul>
-</h3>
-<h2>Présidente de L'Association Sportive et Culturelle</h2><h4>Lomé, Togo</h4>
-<h5>Sept. 2016 - Juin 2017</h5>
-<h3>
-	<ul>
-		<li>Organisation d'évènements sportifs et culturels</li>
-		<li>Gestion d'équipe et délégation de rôles</li>
-	</ul>
-</h3>
+	
+	<div class="logo1">
+		<img src="Images/img11_2.jpg"/>
+		<div class="paragraphe changer">
+				<p>
+						<h2>Baby-Sitter, Kinougarde</h2>
+						Paris, France<br/>
+						Oct. 2017 - Juil. 2019
+						<div id="checklist">
+								<input id="01" type="checkbox" name="r" value="1" checked disabled>
+							<label for="01">Garde d'enfants</label>
+						</div>
+				</p>
+		</div>
+  	</div>
+	
+	<div class="logo1">
+		<img src="Images/img15.jpg"/>
+		<div class="paragraphe changer">
+				<p>
+						<h2>Bénévolat</h2>
+						Paris, France<br/>
+						Janv. 2019 - Juin 2019
+						<div id="checklist">
+								<input id="01" type="checkbox" name="r" value="1" checked disabled>
+							<label for="01">Récolte de fonds dans la rue</label>
+								<input id="02" type="checkbox" name="r" value="2" checked disabled>
+							<label for="02">Recherche de partenaires</label>
+								<input id="03" type="checkbox" name="r" value="3" checked disabled>
+							<label for="03">Promotion de l'association sur les réseaux</label>
+						</div>
+				</p>
+		</div>
+  	</div>
+	
+	<div class="logo1">
+		<img src="Images/img16.jpg"/>
+		<div class="paragraphe changer">
+				<p>
+						<h2>Défilé de Mode</h2>
+						Lomé, Togo<br/>
+						Nov. 2016 - Fév. 2017
+						<div id="checklist">
+								<input id="01" type="checkbox" name="r" value="1" checked disabled>
+							<label for="01">Gestion d'équipe et délégation de rôles</label>
+								<input id="02" type="checkbox" name="r" value="2" checked disabled>
+							<label for="02">Recherche de sponsors</label>
+								<input id="03" type="checkbox" name="r" value="3" checked disabled>
+							<label for="03">Publicité à travers différent réseaux sociaux</label>
+								<input id="04" type="checkbox" name="r" value="3" checked disabled>
+							<label for="04">Aspect humanitaire</label>
+						</div>
+				</p>
+		</div>
+  	</div>
+	
+	<div class="logo1">
+		<img src="Images/img13.png"/>
+		<div class="paragraphe changer">
+				<p>
+						<h2>Présidente de L'Association Sportive et Culturelle</h2>
+						Lomé, Togo<br/>
+						Sept. 2016 - Juin 2017
+						<div id="checklist">
+								<input id="01" type="checkbox" name="r" value="1" checked disabled>
+							<label for="01">Organisation d'évènements sportifs et culturels</label>
+								<input id="02" type="checkbox" name="r" value="2" checked disabled>
+							<label for="02">Gestion d'équipe et délégation de rôles</label>
+				</p>
+		</div>
+  	</div>
+  	
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+  
 </body>
 </html>
 <!-- end of file -->
